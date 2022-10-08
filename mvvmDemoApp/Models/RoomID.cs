@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace mvvmDemoApp.Models
 {
-    internal class RoomID
+    public class RoomID
     {
     }
 }
