@@ -23,5 +23,16 @@ namespace mvvmDemoApp.Models
             StartTime = startTime;  
             EndTime = endTime;
         }
+
+        public bool Conflicts(Reservation reservation)
+        {
+            //checking whether the reservation is having conflicts or not 
+            if (reservation.RoomID != RoomID)
+            {
+                return false;
+            }
+
+            return reservation.StartTime < EndTime || reservation.EndTime > StartTime;
+        }
     }
 }
