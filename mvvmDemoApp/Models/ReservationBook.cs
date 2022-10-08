@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace mvvmDemoApp.Models
 {
-    internal class ReservationBook
+    public class ReservationBook
     {
+        //defining the dictionary to store the reservation book for this purpose 
+        private readonly List<Reservation> _roomsToReservations;
+
+
+        //defining the constructor for reservationbook
+        public ReservationBook()
+        {
+            _roomsToReservations = new List<Reservation>();
+        }
     }
 }
