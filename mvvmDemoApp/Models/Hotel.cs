@@ -19,5 +19,17 @@ namespace mvvmDemoApp.Models
             _reservationBook = new ReservationBook();
             Name = name;
         }
+
+        //we have to add the functionality for the fetching the list of reservations given the username 
+        public IEnumerable<Reservation> GetReservationForUser(string userName)
+        { 
+            return _reservationBook.GetReservationForUser(userName);
+        }
+
+        //function to make the reservation for the hotel and for the current customer 
+        public void MakeReservation(Reservation reservation)
+        {
+            _reservationBook.AddReservation(reservation);
+        }
     }
 }
