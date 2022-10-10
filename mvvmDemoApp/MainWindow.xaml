@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:mvvmDemoApp"
+        xmlns:local="clr-namespace:mvvmDemoApp" xmlns:views="clr-namespace:mvvmDemoApp.Views"
         mc:Ignorable="d"
         Title="Reservoom" Height="450" Width="800">
     <Grid>
-
+        <!--first i am just rendering the make reservation view to the main window of the application for this purpose and then we will see how to render the another page on this window-->
+        <!--in the view of the make reservation i will be just adding the text block for the testing purpose-->
+        <views:MakeReservationView/>
     </Grid>
 </Window>
